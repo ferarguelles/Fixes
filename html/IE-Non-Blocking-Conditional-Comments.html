@@ -1,0 +1,23 @@
+/* IE - Non-blocking conditional comments
+ * 
+ * Problem:  Conditional comments trigger a blocking process that prevent other resources from downloading until finished. 
+ * Solution: Add empty comments at the start of the document.
+ */
+
+<!--[if lt IE 7]> 		<html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    		<html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>   	 	<html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 	<html class=""> <!--<![endif]-->
+
+/* Example: */
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>		<html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         	<html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         	<html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 	<html class=""> <!--<![endif]-->
+    <head>
+    </head>
+    <body>
+    </body>
+</html>
