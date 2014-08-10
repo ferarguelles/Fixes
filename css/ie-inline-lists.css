@@ -1,0 +1,25 @@
+/* Inline List Fix
+ * 
+ * Problem:  Unordered list element using CSS display: inline-block won't align horizontally in IE7  
+ * Solution: add the following properties to the element:;
+ */
+
+ li {
+ 	zoom: 1;
+    *display: inline;
+ }
+
+ /* Example: */
+
+nav ul li,
+nav ul li a {
+	display: block;
+}
+	@media (min-width: 48em) {
+		nav ul li,
+		nav ul li a {
+			display: inline-block;
+			zoom: 1;
+    		*display: inline;
+		}
+	}
